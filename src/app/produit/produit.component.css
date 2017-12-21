@@ -1,0 +1,42 @@
+.myform{
+    text-align: center ;
+    margin: 15px auto ;
+    width: 100%;
+    height:inherit;
+    
+    
+}
+#image1{
+    height: 300px;
+    width: 300px;
+    border: solid gray 2px ;
+    align-self: center ;
+}
+.form2{
+  width: 100%;  
+  text-align: center;
+  display: table;
+  
+  margin: 20px auto 0 auto ;
+  
+}
+.myInput{
+    padding: 5px 0;
+    
+    margin: inherit ;
+    height: 90px;
+    width: 900px;
+    font-size: 20px ;
+}
+.button1{
+    margin: 5px ;
+}
+
+.form3
+{
+    padding: 5px ;
+}
+
+#form4 {
+background-color: rgb(248, 237, 239) ;
+}

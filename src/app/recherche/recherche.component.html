@@ -1,0 +1,57 @@
+<div class="container">
+
+<div class="in">
+
+<h1 style=" font-family:'Times New Roman', Times, serif ; font-style:italic ; font-size: 100px ; color: darksalmon ">welcome</h1>
+<div >
+  <p >chercher des produits</p>
+  <nav class="myNav">
+      <form class=" myform" role="search" >
+        <input   type="text" [(ngModel)]="inputValue" name="search"  class="query" >
+        <button class=" mybutton" type="submit" (click)="performSearch()"><a [routerLink]="['/Search List']"> Search </a></button>
+      </form>
+    </nav>
+</div>
+</div>
+</div>
+<div class="container" style="padding:10px; margin: 50px" *ngIf='products && products.length' >
+  <div class='table-responsive'>
+  <table class='table'style="padding:10px; margin: 50px ;border:10px solid inherit ;  background-color:white "
+         >
+      <thead>
+          <tr>
+              <th>
+                   Image
+                 
+              </th>
+              <th>Product Name </th>
+              <th>Code</th>
+              <th>Available</th>
+              <th>Price</th>
+          
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor='let product of products' >
+            <td  >
+              <img 
+              [src]='product.imageUrl'
+              
+              [style.width.px]='imageWidth'
+              [style.margin.px]='imageMargin'
+             > 
+          </td>
+          <td><a [routerLink]="['/Product Detail',product.id]">{{ product.productName}}</a></td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{ product.price}}</td>
+          
+          </tr>
+      </tbody>
+  </table>
+</div>
+</div>
+
+
+
+

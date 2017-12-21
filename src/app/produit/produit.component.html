@@ -1,0 +1,27 @@
+
+  
+   <div *ngIf="products">
+    
+    <div class=container>
+      <div class=myform>
+        <div class="card">
+         <img id="image1" [src]="products[id-1].imageUrl" [style.width.px]='imageWidth'
+         [style.margin.px]='imageMargin'>
+          <div class="card-block">
+
+        <h4 class="card-title">{{products[id-1].productName}}</h4>
+        <p ><strong>{{products[id-1].description}}</strong> </p>
+        <p class="form3"> </p>
+        <button class="btn btn-warning button1" (click)="setId(id)">
+          <span class="glyphicon  glyphicon-shopping-cart" ></span> Ajouter au panier
+        </button>
+      </div>
+    </div>
+      </div>
+   
+</div>
+
+
+
+</div>
+   

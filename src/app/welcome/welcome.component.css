@@ -1,0 +1,46 @@
+
+.myNav{ 
+    
+    background-color: inherit ;
+    
+    
+    
+  }
+  
+  .query{
+   
+   
+   height: 40px;
+   border: solid rgb(241, 231, 227)  1px;
+   
+   width: 500px;
+   
+  }
+  .mybutton{
+      
+      height: 40px;
+      border: solid rgb(180, 180, 180) 1px;
+      
+  }
+  
+  
+  
+  /*div*/
+  .in{
+      margin: 10px 0 10px 0  ;
+      text-align: center ;
+      width:100%;
+      background-color : rgb(236, 243, 247);
+      padding: 50px ;
+      border: solid 5px rgb(238, 238, 238);
+      
+  }
+  .myform {
+  text-align: center ;
+  height: inherit ;
+  display: inline;
+  width: 100%;
+  }
+  #form4 {
+      background-color: rgb(248, 237, 239) ;
+      }

@@ -1,0 +1,40 @@
+<div class="container" style="padding:10px; margin: 50px">
+  <div class='table-responsive'>
+  <table class='table'style="padding:10px; margin: 50px ;border:10px solid inherit ;  background-color:white "
+         >
+      <thead>
+          <tr >
+              <th>
+                   Image
+                 
+              </th>
+              <th>Product Name </th>
+              <th>Code</th>
+              <th>Available</th>
+              <th>Price</th>
+          
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor='let product of products '>
+              
+            <td *ngIf=' product.type == "Cell Phone" ' >
+              <img 
+              [src]='product.imageUrl'
+              [title]='product.productName'
+              [style.width.px]='imageWidth'
+              [style.margin.px]='imageMargin'
+             > 
+          </td>
+          <td *ngIf=' product.type == "Cell Phone"'><a [routerLink]="['/Product Detail',product.id]">{{ product.productName}}</a></td>
+          <td *ngIf=' product.type == "Cell Phone"'>{{ product.id }}</td>
+          <td *ngIf=' product.type == "Cell Phone"'>{{ product.type }}</td>
+          <td *ngIf=' product.type == "Cell Phone"'>{{ product.price }}</td>
+      
+          </tr>
+      </tbody>
+  </table>
+</div>
+</div>
+
+

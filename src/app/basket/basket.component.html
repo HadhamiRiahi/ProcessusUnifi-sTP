@@ -1,0 +1,39 @@
+<div class="container" style="padding:10px; margin: 50px">
+  <div class='table-responsive'>
+  <table class='table'style="padding:10px; margin: 50px ;border:10px solid inherit ;  background-color:white "
+         >
+      <thead>
+          <tr>
+              <th>
+                   Image
+                 
+              </th>
+              <th>Product Name </th>
+              <th>Code</th>
+              <th>Available</th>
+              <th>Price</th>
+              <th>Buy</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor='let product of shoppingBasket' >
+            <td  >
+              <img 
+              [src]='product.imageUrl'
+              
+              [style.width.px]='imageWidth'
+              [style.margin.px]='imageMargin'
+             > 
+          </td>
+          <td><a [routerLink]="['/Product Detail',product.id]">{{ product.productName}}</a></td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.type }}</td>
+          <td>{{ product.price}}</td>
+          <td><button (click)="BuyProduct(product.id,product.productName,product.price)">buy it</button></td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+</div>
+
+
